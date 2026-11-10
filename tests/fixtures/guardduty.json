@@ -1,0 +1,28 @@
+{
+  "version": "0",
+  "id": "0abcde00-1111-4222-8333-abcdef123457",
+  "detail-type": "GuardDuty Finding",
+  "source": "aws.guardduty",
+  "account": "111122223333",
+  "time": "2026-11-09T19:02:00Z",
+  "region": "us-east-1",
+  "resources": [],
+  "detail": {
+    "accountId": "111122223333",
+    "region": "us-east-1",
+    "id": "0123456789abcdef0123456789abcdef",
+    "type": "Exfiltration:S3/AnomalousBehavior",
+    "severity": 8.0,
+    "updatedAt": "2026-11-09T19:02:00.000Z",
+    "resource": {
+      "resourceType": "S3Bucket",
+      "s3BucketDetails": [
+        {"name": "example-source-bucket"}
+      ]
+    },
+    "service": {
+      "archived": false,
+      "count": 1
+    }
+  }
+}

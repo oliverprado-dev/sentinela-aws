@@ -1,0 +1,12 @@
+aws_region = "us-east-1"
+
+response_mode = "observe"
+
+# Use false se já houver uma trilha registrando escritas de gerenciamento.
+create_cloudtrail = true
+
+# Use true somente em conta sandbox sem um detector nesta região.
+create_guardduty_detector = false
+
+# Opcional. Confirme o e-mail que o SNS enviar.
+# alert_email = "seguranca@example.com"

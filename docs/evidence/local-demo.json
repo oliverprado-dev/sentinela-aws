@@ -1,0 +1,65 @@
+{
+  "enforce": {
+    "bucket_writes": 1,
+    "current_bucket_flags": {
+      "BlockPublicAcls": true,
+      "BlockPublicPolicy": true,
+      "IgnorePublicAcls": true,
+      "RestrictPublicBuckets": true
+    },
+    "evidence": {
+      "after": {
+        "BlockPublicAcls": true,
+        "BlockPublicPolicy": true,
+        "IgnorePublicAcls": true,
+        "RestrictPublicBuckets": true
+      },
+      "before": {
+        "BlockPublicAcls": true,
+        "BlockPublicPolicy": false,
+        "IgnorePublicAcls": true,
+        "RestrictPublicBuckets": true
+      },
+      "desired": {
+        "BlockPublicAcls": true,
+        "BlockPublicPolicy": true,
+        "IgnorePublicAcls": true,
+        "RestrictPublicBuckets": true
+      },
+      "mode": "enforce",
+      "outcome": "remediated"
+    },
+    "guardduty": "triage_required",
+    "notification_count": 2,
+    "redelivery": "duplicate",
+    "result": "remediated"
+  },
+  "environment": "offline_synthetic",
+  "observe": {
+    "bucket_writes": 0,
+    "current_bucket_flags": {
+      "BlockPublicAcls": true,
+      "BlockPublicPolicy": false,
+      "IgnorePublicAcls": true,
+      "RestrictPublicBuckets": true
+    },
+    "evidence": {
+      "after": null,
+      "before": {
+        "BlockPublicAcls": true,
+        "BlockPublicPolicy": false,
+        "IgnorePublicAcls": true,
+        "RestrictPublicBuckets": true
+      },
+      "desired": {
+        "BlockPublicAcls": true,
+        "BlockPublicPolicy": true,
+        "IgnorePublicAcls": true,
+        "RestrictPublicBuckets": true
+      },
+      "mode": "observe",
+      "outcome": "would_remediate"
+    },
+    "result": "would_remediate"
+  }
+}

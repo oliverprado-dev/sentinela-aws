@@ -1,0 +1,32 @@
+{
+  "version": "0",
+  "id": "0abcde00-1111-4222-8333-abcdef123456",
+  "detail-type": "AWS API Call via CloudTrail",
+  "source": "aws.s3",
+  "account": "111122223333",
+  "time": "2026-11-09T19:00:03Z",
+  "region": "us-east-1",
+  "resources": [],
+  "detail": {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AssumedRole",
+      "sessionContext": {
+        "sessionIssuer": {
+          "arn": "arn:aws:iam::111122223333:role/sandbox-operator"
+        }
+      }
+    },
+    "eventTime": "2026-11-09T19:00:00Z",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "PutBucketPublicAccessBlock",
+    "awsRegion": "us-east-1",
+    "requestParameters": {
+      "bucketName": "sentinela-aws-lab-exemplo"
+    },
+    "eventID": "01234567-89ab-4cde-8123-456789abcdef",
+    "readOnly": false,
+    "eventCategory": "Management",
+    "recipientAccountId": "111122223333"
+  }
+}

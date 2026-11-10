@@ -1,0 +1,11 @@
+{
+  "cloudtrail_operations": [
+    "PutBucketPublicAccessBlock",
+    "DeleteBucketPublicAccessBlock"
+  ],
+  "guardduty_types": [
+    "Exfiltration:S3/AnomalousBehavior",
+    "Impact:S3/AnomalousBehavior.Delete"
+  ],
+  "guardduty_min_severity": 4
+}
